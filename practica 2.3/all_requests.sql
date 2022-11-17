@@ -267,43 +267,43 @@ values
 
 --задание 6.1
 select id, fio, age(now(), startdate) as experience
-from employees
+from employees;
 
 --задание 6.2
 select id, fio, age(now(), startdate) as experience
 from employees
 order by experience desc
-limit 3
+limit 3;
 
 --задание 6.3
 select id
 from employees
-where driver = true
+where driver = true;
 
 --задание 6.4
 select emp_id
 from evaluations
-where q1 in ('D', 'E') or q2 in ('D', 'E') or q3 in ('D', 'E') or q4 in ('D', 'E')
+where q1 in ('D', 'E') or q2 in ('D', 'E') or q3 in ('D', 'E') or q4 in ('D', 'E');
 
 --задание 6.5
 select max(salary) max_salary
-from employees
+from employees;
 
 --задание 6.6
 select names
 from departments
 order by emp_count desc
-limit 1
+limit 1;
 
 --задание 6.7
 select id, age(now(), startdate) as experience
 from employees
-order by experience desc
+order by experience desc;
 
 --задание 6.8
 select levels, round(avg(salary)) avg_salary
 from employees
-group by levels
+group by levels;
 
 --задание 6.9
 select emp.*,
@@ -314,4 +314,4 @@ select emp.*,
     (case when q4 = 'A' then -0.2 when q4 = 'B' then -0.1 when q4 = 'C' then 0 when q4 = 'D' then 0.1 when q4 = 'E' then 0.2 end)
     as coef
 from evaluations ev
-left join employees emp on ev.emp_id = emp.id
+left join employees emp on ev.emp_id = emp.id;
