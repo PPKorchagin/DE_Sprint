@@ -130,3 +130,11 @@ dmypy.json
 
 # git clone
 /practica 3.1/docker/
+
+FinalProject/venv/
+FinalProject/.idea/
+FinalProject/sourse/
+FinalProject/.ipynb_checkpoints/
+FinalProject/src/ipynb_checkpoints/
+FinalProject/docker-compose.yaml
+FinalProject/source/
