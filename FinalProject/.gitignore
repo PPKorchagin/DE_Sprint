@@ -1,7 +1,0 @@
-venv/
-.idea/
-sourse/
-.ipynb_checkpoints/
-src/ipynb_checkpoints/
-docker-compose.yaml
-
